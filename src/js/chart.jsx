@@ -10,9 +10,23 @@ class Chart extends Component {
 		super(props);
 
 		this.state = {
-
+			chickenRecipeSauceArray: []
 		};
 		
+	}
+
+	componentDidUpdate () {
+		let dataPointsArray = []
+		console.log(`chicken: `, this.props.chickenRecipe.ingredients.section2.ingredients);
+		this.props.chickenRecipe.ingredients.section2.ingredients.forEach( (each) => {
+			dataPointsArray.push({ y: 1, label: each })
+		})
+		console.log(`dataPointsArray: `, dataPointsArray);
+		if (this.state.chickenRecipeSauceArray.length === 0) {
+		this.setState({
+			chickenRecipeSauceArray: dataPointsArray
+		})
+	}
 	}
 
 
@@ -20,10 +34,10 @@ class Chart extends Component {
 		const options = {
 			theme: "dark2",
 			animationEnabled: true,
-			exportFileName: "New Year Resolutions",
+			exportFileName: this.props.chickenRecipe.name,
 			exportEnabled: true,
 			title:{
-				text: "Top Categories of New Year's Resolution"
+				text: this.props.chickenRecipe.name
 			},
 			data: [{
 				type: "pie",
@@ -32,14 +46,7 @@ class Chart extends Component {
 				toolTipContent: "{label}: <strong>{y}%</strong>",
 				indexLabel: "{y}%",
 				indexLabelPlacement: "inside",
-				dataPoints: [
-					{ y: 32, label: "Health" },
-					{ y: 22, label: "Finance" },
-					{ y: 15, label: "Education" },
-					{ y: 19, label: "Career" },
-					{ y: 5, label: "Family" },
-					{ y: 7, label: "Real Estate" }
-				]
+				dataPoints: this.state.chickenRecipeSauceArray
 			}]
 		}
 		return (
