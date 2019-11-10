@@ -19,7 +19,7 @@ class Chart extends Component {
 		let dataPointsArray = []
 		console.log(`chicken: `, this.props.chickenRecipe.ingredients.section2.ingredients);
 		this.props.chickenRecipe.ingredients.section2.ingredients.forEach( (each) => {
-			dataPointsArray.push({ y: 1, label: each })
+			dataPointsArray.push({ y: each.amount, label: each.ingredient })
 		})
 		console.log(`dataPointsArray: `, dataPointsArray);
 		if (this.state.chickenRecipeSauceArray.length === 0) {
