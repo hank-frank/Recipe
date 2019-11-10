@@ -1,28 +1,32 @@
 {
-  "name": "react-parcel",
-  "version": "1.0.0",
+  "name": "recipe",
+  "version": "0.5.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "build": "NODE_ENV=production parcel build src/index.html"
+    "build": "NODE_ENV=production parcel build src/index.html",
+    "watch": "NODE_ENV=development parcel watch src/index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SanDiegoCodeSchool/react-parcel.git"
+    "url": "git+https://github.com/hank-frank/Recipe.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SanDiegoCodeSchool/react-parcel/issues"
+    "url": "https://github.com/hank-frank/Recipe/issues"
   },
-  "homepage": "https://github.com/SanDiegoCodeSchool/react-parcel#readme",
+  "homepage": "https://github.com/hank-frank/Recipe#readme",
   "dependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "axios": "^0.19.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "chart.js": "^2.9.2",
     "express": "^4.17.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
