@@ -4,91 +4,105 @@
     "ingredients": {
         "section1": {
             "name": "Chicken",
+            "instructions": [
+                "Roast the Chicken",
+                "Arrange rack in middle of oven; preheat to 400°F. Mix garlic, cumin, oil, paprika, pepper, oregano, 1/2 tsp. salt, and finely grated zest from 1 lemon in a medium bowl. Quarter zested lemon; set aside 2 quarters. Squeeze juice from 1 whole lemon and remaining 2 quarters to yield 2 Tbsp. juice; stir into spice mixture.",
+                "Place chicken breast side down on work surface. Spatchcock chicken by cutting along both sides of backbone with kitchen shears. Remove backbone; reserve for stock. Turn chicken breast side up and splay open. Press down on breastbone with palms until you hear it crack and chicken is as flat as possible. Pat chicken dry with paper towels. Rub chicken all over with 2 reserved lemon quarters. Squeeze juice over bird, then rub skin all over with inside of rinds.",
+                "From both edges of cavity, loosen skin from breasts and thighs, being careful not to tear skin. Using your fingers, gently spread 2 heaping Tbsp. spice mixture under skin (reserve remaining spice mixture), then season chicken all over with remaining 1 tsp. salt. Transfer chicken, spread flat and skin side up, to a roasting pan or large skillet.",
+                "Roast chicken 20 minutes, then brush with spice mixture and pan juices. Continue roasting, basting with spice mixture and pan juices every 20 minutes, until juices run clear when thigh is pierced with a fork or an instant-read thermometer inserted into thickest part of thigh registers 165ºF, 50-60 minutes total.",
+                "Transfer chicken to a cutting board and let rest 15 minutes, reserving pan juices."
+            ],
             "ingredients": [
                 {
                     "amount": 3,
+                    "grams": 30,
                     "ingredient": "garlic cloves, finely chopped"
                 },
                 {
                     "amount": 1,
+                    "grams": 6,
                     "ingredient": "tablespoon ground cumin"
                 },
                 {
                     "amount": 1,
+                    "grams": 13,
                     "ingredient": "tablespoon olive oil"
                 },
                 {
                     "amount": 1,
+                    "grams": 7,
                     "ingredient": "tablespoon paprika"
                 },
                 {
                     "amount": 0.5,
+                    "grams": 1,
                     "ingredient": "teaspoon freshly ground black pepper"
                 },
                 {
                     "amount": 0.5,
+                    "grams": 0.5,
                     "ingredient": "teaspoon dried oregano"
                 },
                 {
                     "amount": 1.5,
+                    "grams": 9,
                     "ingredient": "teaspoons kosher salt, divided"
                 },
                 {
                     "amount": 2,
+                    "grams": 226,
                     "ingredient": "lemons"
                 },
                 {
                     "amount": 1,
+                    "grams": "",
                     "ingredient": "(4-4 1/2-pound) whole chicken"
                 }
             ]},
         "section2": {
             "name": "Green Sauce",
+            "instructions": [
+                "Purée cilantro, jalapeños, garlic, oil, lime juice, and salt in a blender until combined.",
+                "Add mayonnaise and purée until well blended.",
+                "Transfer to a small bowl, cover, and chill until ready to use."
+            ],
             "ingredients": [
                 {
                     "amount": 1,
+                    "grams": 50,
                     "ingredient": "cup (packed) cilantro leaves with tender stems"
                 },
                 {
                     "amount": 2,
+                    "grams": 40,
                     "ingredient": "1–2 medium jalapeños, coarsely chopped"
                 },
                 {
                     "amount": 1,
+                    "grams": 10,
                     "ingredient": "garlic clove, finely chopped"
                 },
                 {
                     "amount": 1,
+                    "grams": 13,
                     "ingredient": "tablespoon extra-virgin olive oil"
                 },
                 {
                     "amount": 2.5,
+                    "grams": 5, 
                     "ingredient": "teaspoons fresh lime juice"
                 },
                 {
                     "amount": 0.25,
+                    "grams": 2,
                     "ingredient": "teaspoon kosher salt"
                 },
                 {
                     "amount": 0.33,
-                    "ingredient": "cups mayonase"
+                    "grams": 77,
+                    "ingredient": "cups mayonase or sour cream"
                 }
             ]
         }
-    },
-    "instructions": {
-        "Roast the Chicken": {
-            "0": "Arrange rack in middle of oven; preheat to 400°F. Mix garlic, cumin, oil, paprika, pepper, oregano, 1/2 tsp. salt, and finely grated zest from 1 lemon in a medium bowl. Quarter zested lemon; set aside 2 quarters. Squeeze juice from 1 whole lemon and remaining 2 quarters to yield 2 Tbsp. juice; stir into spice mixture.",
-            "1": "Place chicken breast side down on work surface. Spatchcock chicken by cutting along both sides of backbone with kitchen shears. Remove backbone; reserve for stock. Turn chicken breast side up and splay open. Press down on breastbone with palms until you hear it crack and chicken is as flat as possible. Pat chicken dry with paper towels. Rub chicken all over with 2 reserved lemon quarters. Squeeze juice over bird, then rub skin all over with inside of rinds.",
-            "2": "From both edges of cavity, loosen skin from breasts and thighs, being careful not to tear skin. Using your fingers, gently spread 2 heaping Tbsp. spice mixture under skin (reserve remaining spice mixture), then season chicken all over with remaining 1 tsp. salt. Transfer chicken, spread flat and skin side up, to a roasting pan or large skillet.",
-            "3": "Roast chicken 20 minutes, then brush with spice mixture and pan juices. Continue roasting, basting with spice mixture and pan juices every 20 minutes, until juices run clear when thigh is pierced with a fork or an instant-read thermometer inserted into thickest part of thigh registers 165ºF, 50-60 minutes total.",
-            "4": "Transfer chicken to a cutting board and let rest 15 minutes, reserving pan juices."
-        },
-        "Make the green sauce:": {
-            "0": "Purée cilantro, jalapeños, garlic, oil, lime juice, and salt in a blender until combined. Add mayonnaise and purée until well blended. Transfer to a small bowl, cover, and chill until ready to use."
-        },
-        "Do Ahead": {
-            "0": "Green sauce can be made 5 days ahead. Cover and chill."
-        }
-    }
+    }  
 }

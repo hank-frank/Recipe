@@ -1,3 +1,129 @@
-.red {
-    color: red;
+@font-face {
+    font-family: 'geomanistregular';
+    src: url('../assets/geomanist-regular-webfont.woff2') format('woff2'),
+    url('../assets/geomanist-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'geomanistlight';
+    src: url('../assets/geomanist-light-webfont.woff2') format('woff2'),
+    url('../assets/geomanist-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$geo: 'geomanistregular', sans-serif;
+$geo-light: 'geomanistlight', sans-serif;
+$dark: #7e023c;
+$med: #9A1750;
+$light: #E3AFBC;
+$pink: #EE4C7C;
+$bright: #e30815;
+$grey: #E2e1dd;
+$dkgrey: #32373a;
+
+body {
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: $grey;
+    font-family: $geo;
+}
+
+
+/////////////////////////////////////////////////////
+///               Header
+/////////////////////////////////////////////////////
+.header-container {
+    background-color: $med;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-item {
+    color: $grey;
+}
+
+/////////////////////////////////////////////////////
+///               Main
+/////////////////////////////////////////////////////
+
+.row-centered-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row-spaced-evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5vw;
+}
+
+.recipe-title {
+    color: $dkgrey;
+}
+
+.divider-border {
+    border-bottom: 2px solid $dark;
+}
+
+.col-ingredients {
+    // color: $med;
+    margin-bottom: 5vh;
+}
+
+.instructions-title {
+    width: 45vw;
+    border-bottom: 1px solid $med;
+}
+
+.ingredient-title {
+    width: 20vw;
+    font-size: 1.3rem;
+    border-bottom: 1px solid $med;
+}
+
+.ingredient {
+    font-family: $geo-light;
+    margin: 0 1vw;
+}
+
+.ing-title {
+    font-family: $geo;
+}
+
+.instructions-title {
+    font-size: 1.3rem;
+}
+
+.description {
+    margin: 2vh 5vw;
+    font-family: $geo-light;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    margin: 0;
+    color: $dkgrey;
+}
+
+.chart-test {
+    width: 80vw;
+}
+
+

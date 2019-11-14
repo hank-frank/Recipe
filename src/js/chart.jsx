@@ -15,13 +15,13 @@ class Chart extends Component {
 		
 	}
 
-	componentDidUpdate () {
+	componentDidMount () {
 		let dataPointsArray = []
-		console.log(`chicken: `, this.props.chickenRecipe.ingredients.section2.ingredients);
-		this.props.chickenRecipe.ingredients.section2.ingredients.forEach( (each) => {
-			dataPointsArray.push({ y: each.amount, label: each.ingredient })
+		console.log(`chicken: `, this.props.importedRecipe);
+		this.props.importedRecipe.ingredients.forEach( (each) => {
+			dataPointsArray.push({ y: each.grams, label: each.ingredient })
 		})
-		console.log(`dataPointsArray: `, dataPointsArray);
+		// console.log(`dataPointsArray: `, dataPointsArray);
 		if (this.state.chickenRecipeSauceArray.length === 0) {
 		this.setState({
 			chickenRecipeSauceArray: dataPointsArray
@@ -34,10 +34,10 @@ class Chart extends Component {
 		const options = {
 			theme: "dark2",
 			animationEnabled: true,
-			exportFileName: this.props.chickenRecipe.name,
+			exportFileName: this.props.importedRecipe.name,
 			exportEnabled: true,
 			title:{
-				text: this.props.chickenRecipe.name
+				text: this.props.importedRecipe.name
 			},
 			data: [{
 				type: "pie",
@@ -50,11 +50,13 @@ class Chart extends Component {
 			}]
 		}
 		return (
-		<div>
-			<CanvasJSChart options = {options}
-				/* onRef={ref => this.chart = ref} */
-			/>
-			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+		<div className="row-centered-content">
+			<div className="chart-test">
+				<CanvasJSChart options = {options}
+					/* onRef={ref => this.chart = ref} */
+				/>
+				{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+			</div>
 		</div>
 		);
 	}

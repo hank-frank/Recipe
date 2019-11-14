@@ -4,24 +4,28 @@ import React, { useState, useEffect } from 'react';
 
 import importedRecipe from "./recipes/recipes.json"
 
-import Chart from "./chart.jsx"
+import Header from "./header.jsx"
+import Main from "./Main.jsx"
+// import Chart from "./chart.jsx"
 
 function App () {
   const [chickenRecipe, setChickenRecipe] = useState([]);
 
-  useEffect( () => {
-    setChickenRecipe(importedRecipe);
-  });
+  // useEffect( () => {
+  //   setChickenRecipe(importedRecipe);
+  //   // console.log(`from app: `, chickenRecipe.ingredients ? chickenRecipe.ingredients.section1 : "whoops")
+  // });
 
   return (
     <>
-      <div>
+    <Header />
+    <Main 
+      importedRecipe = { importedRecipe }
+    />
 
-      </div>
-
-      <Chart
-        chickenRecipe = { chickenRecipe }
-      ></Chart>
+    {/* <Chart
+      importedRecipe = { importedRecipe }
+    /> */}
       
     </>
     )
