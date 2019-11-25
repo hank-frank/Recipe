@@ -1,7 +1,6 @@
 var React = require('react');
 var Component = React.Component;
-import * as CanvasJSReact from '../canvasjs-2.3.2/canvasjs.react';
-// var CanvasJSReact = require('../canvasjs-2.3.2/canvasjs.react');
+import * as CanvasJSReact from '../canvasjs-non-commercial-2.3.2/canvasjs.react';
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
@@ -17,11 +16,9 @@ class Chart extends Component {
 
 	componentDidMount () {
 		let dataPointsArray = []
-		console.log(`chicken: `, this.props.importedRecipe);
 		this.props.importedRecipe.ingredients.forEach( (each) => {
 			dataPointsArray.push({ y: each.grams, label: each.ingredient })
 		})
-		// console.log(`dataPointsArray: `, dataPointsArray);
 		if (this.state.chickenRecipeSauceArray.length === 0) {
 		this.setState({
 			chickenRecipeSauceArray: dataPointsArray

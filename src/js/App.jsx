@@ -10,23 +10,27 @@ import Main from "./Main.jsx"
 
 function App () {
   const [chickenRecipe, setChickenRecipe] = useState([]);
+  const[cocktail, setCocktail] = useState({});
 
-  // useEffect( () => {
-  //   setChickenRecipe(importedRecipe);
-  //   // console.log(`from app: `, chickenRecipe.ingredients ? chickenRecipe.ingredients.section1 : "whoops")
-  // });
+
+  function apiTest () {
+    fetch(`/cocktails`)
+    .then((response) => {
+      return response = response.json()
+    })
+    .then((data) => {
+      setCocktail(data);
+    })
+    .catch(err => console.log(`whoopsies`, err))
+  };
 
   return (
     <>
     <Header />
+    <button className="test-button" onClick={ ()=> apiTest()}>Testing!</button>
     <Main 
       importedRecipe = { importedRecipe }
-    />
-
-    {/* <Chart
-      importedRecipe = { importedRecipe }
-    /> */}
-      
+    />      
     </>
     )
 

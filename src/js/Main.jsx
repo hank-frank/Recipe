@@ -13,9 +13,6 @@ const [recipeObj, setRecipeObj] = useState({});
 //     setRecipeObj(props.chickenRecipe);
 // },[props.chickenRecipe]);
 
-console.log(`from Main: `, props.importedRecipe.instructions );
-console.log(`from Main: `, props.importedRecipe );
-
 return (
     <>
     <div className="row-centered-content">
@@ -41,8 +38,7 @@ return (
             <p className="instructions-title">Instructions:</p>
             {
                 props.importedRecipe.ingredients.section2.instructions.map( (each) => {
-                    console.log(each);
-                    return <p className="ingredients">{ each }</p>
+                    return <p className="ingredient">{ each }</p>
                     
                 })
             }
@@ -65,7 +61,7 @@ return (
             <p className="instructions-title">Instructions:</p>
             {
                 props.importedRecipe.ingredients.section1.instructions.map( (each) => {
-                    return <p className="ingredients">{ each }</p>
+                    return <p className="ingredient">{ each }</p>
                     
                 })
             }
